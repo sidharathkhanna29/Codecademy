@@ -1,0 +1,5 @@
+In this unit, you will learn a variety of useful techniques that React programmers are expected to know.
+
+Learn how to make a stateless functional component, how to make a propType, how to write a form, and how to use styles.
+
+Second programming pattern: dividing components into presentational components and container components.
