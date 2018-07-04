@@ -1,0 +1,16 @@
+componentWillMount
+The first mounting lifecycle method is called componentWillMount.
+
+When a component renders for the first time, componentWillMount gets called right before render.
+
+Look at Example.js, and follow these steps:
+
+On lines 14-17, <Example /> is rendered for the first time. <Example />'s mounting period begins.
+<Example /> calls the first mounting lifecycle method, componentWillMount.
+componentWillMount executes, and an alert appears on the screen. (lines 5-7)
+After componentWillMount has finished, <Example /> calls the second mounting lifecycle method: render.
+<h1>Hello world</h1> appears on the screen (lines 9-11)
+Two seconds later, <Example /> renders again (lines 20-22). componentWillMount does NOT get called, because mounting lifecycle events only execute the first time that a component renders.
+You can call this.setState from within componentWillMount!
+
+Look at Example2.js for an example of this.setState inside of componentWillMount. See if you can follow how <Example2 /> would render <h1>Hello world</h1>.
