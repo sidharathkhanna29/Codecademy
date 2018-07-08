@@ -1,0 +1,13 @@
+The first updating lifecycle method is called componentWillReceiveProps.
+
+When a component instance updates, componentWillReceiveProps gets called before the rendering begins.
+
+As one might expect, componentWillReceiveProps only gets called if the component will receive props
+
+
+componentWillReceiveProps automatically gets passed one argument: an object called nextProps. nextProps is a preview of the upcoming props object that the component is about to receive.
+
+
+This is a common use of componentWillReceiveProps: comparing incoming props to current props or state, and deciding what to render based on that comparison.
+
+If you are already comfortable with React, then you may have caught a detail about this example that is considered bad form. this.state.highest is derived from props. That means that we use information from props to set the value of information stored in state.
